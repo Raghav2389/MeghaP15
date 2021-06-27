@@ -7,17 +7,17 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.test.classes.VerifyLogin">
+      <class name="com.test.classes.TestAddWatchList">
         <methods>
-          <include name="loginToUserAccount"/>
-          <include name="createObject"/>
+          <include name="logoutAccount"/>
+          <include name="verifyAddBtn" invocation-numbers="0"/>
           <include name="closedBrowser"/>
           <include name="clearObjects"/>
-          <include name="verifyCredentials" invocation-numbers="0 1 2"/>
-          <include name="logoutAccount"/>
+          <include name="loginToUserAccount"/>
+          <include name="createObject"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.test.classes.VerifyLogin -->
+      </class> <!-- com.test.classes.TestAddWatchList -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

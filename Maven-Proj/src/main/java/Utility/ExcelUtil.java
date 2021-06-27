@@ -42,6 +42,7 @@ public class ExcelUtil {
 			for(int k=0;k<sht.getRow(0).getLastCellNum();k++)
 			{
 				data[i][k]=sht.getRow(i+1).getCell(k).toString();
+				System.out.println(data[i][k]);
 			}
 		}
 		return data;

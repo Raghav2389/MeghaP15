@@ -56,6 +56,7 @@ public class VerifyLogin {
 			driver = Pojo.openFirefoxBrowser();
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 	}
 	@BeforeClass
 	public void createObject() {

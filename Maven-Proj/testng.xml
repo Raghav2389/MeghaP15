@@ -8,7 +8,7 @@
  <test thread-count="5" name="ChromeTest">
     <parameter name="browser" value="Chrome" />
     <classes>
-      <class name="com.test.classes.VerifyLogin" />
+      <class name="com.test.classes.TestAddWatchList" />
     </classes>
   </test> <!-- Test -->
  
